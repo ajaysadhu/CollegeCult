@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        section {
+            padding: 40px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="text-center bg-outline text-dark">Modules of College Cult - Networking App</h2>
+    <section id="toc" class="bg-light">
+        <div class="text-left text-success display-5">Table of Contents</div>
+        <ul>
+            <li>
+                <a href="#registration">1. Student registration/ Verification System</a>
+            </li>
+            <li>
+                <a href="#livefeed">2. Live Feed of all posts and events</a>
+            </li>
+            <li>
+                <a href="#personalpage">3. Personal Profile page</a>
+            </li>
+            <li>
+                <a href="#eventlifecycle">4. Event Lifecycle System</a>
+            </li>
+            <li>
+                <a href="#volunteeradmin">5. Volunteer Admin Workflow</a>
+            </li>
+            <li>
+                <a href="#chat">6. Chats & Groups</a>
+            </li>
+            <li>
+                <a href="#blog">7. Blog Site</a>
+            </li>
+            <li>
+                <a href="#digitalfootprint">8. Digital Footprint with Timeline as a sharable CV</a>
+            </li>
+            <li>
+                <a href="#reportposts">9. Post Sensoring - Report abusive language, Report Offence, Report Spam</a>
+            </li>
+
+
+        </ul>
+    </section>
+    <section id="phase-2" class="bg-light">
+        <h4 class="text-warning text-left">Phase-2:</h4>
+
+
+        <ul>
+            <li>
+                <a href="#deals">10. Student Deals</a>
+            </li>
+            <li>
+                <a href="#slambook">11. Digital Footprint with Timeline as a slam book (strictly personal)</a>
+            </li>
+            <li>
+                <a href="#marketplace">12. Market Place</a>
+            </li>
+            <li>
+                <a href="#careeradvicing">13. Career Advising</a>
+            </li>
+            <p class="text-primary">...more to come</p>
+
+        </ul>
+    </section>
+
+    <div id="registration" class="mt-5">
+        <h4 class="btn-success btn">Student Registration/ Verification System</h4>
+
+        <ul class="unstyled align-items-center">
+            <li> Student can add profile picture only once a year. Re-addressal sytems will be in place on need basis
+            </li>
+            <li> As a first criteria, an email will be sent to the student's college email id and student needs to
+                verify.</li>
+            <li> A live picture with ID will need to be uploaded for verification purpose.</li>
+            <li> Student can have a nickname.</li>
+            <li> One of the fundamental criteria on which the app is based and marketed will be on Eliminating Anonymous
+                personnel who can use the app. This system will be verifying the student's info like College, Branch,
+                Year etc., as strongly as a KYC we do for banks. Possible necessary practical actions need be designed
+                and implemented. </li>
+            <li><i class="bi bi-exclamation-triangle-fill"></i> Is Username auto-generated or User selects ?</li></i>
+            <li><i class="bi bi-exclamation-triangle-fill"></i> Which name will be displayed on all live feeds or
+                comments - username/nickname?</li>
+            <li><i class="bi bi-exclamation-triangle-fill"></i> When someone updates their nickname/name it would affect
+                all older posts as well. Is that acceptable ?
+            </li>
+            <li> Everyone gets a QR code generated after successful regitration and it can be used for attending events,
+                chatting etc.,</li>
+
+        </ul>
+
+        <div id="livefeed" class="mt-5">
+            <h4 class="btn-success btn"> Live Feed of Student Posts/Events:</h4>
+            <ul class="unstyled">
+
+                <li>This is a home page for all students where they get a glimpse of what all is happening in and around
+                    all colleges. There will be a filter available for students to see :</li>
+                <ul>
+                    <li>Only Their College and their Branch</li>
+                    <li> Only Their College</li>
+                    <li> Only Their City or Town</li>
+                    <li> Only Country</li>
+                    <li><i class="bi bi-exclamation-triangle-fill"></i>Everyone (Is this necessary ?)</li>
+                </ul>
+                <li>Student can tag only ones who are in their friend list.</li>
+                <li>Comments can be added by anyone to all public posts</li>
+                <li>Likes and upvote/downvote can be provided to posts</li>
+                <li>Post can be made as private/ public</li>
+                <li><i class="bi bi-exclamation-triangle-fill"></i> Define Private post and public post ?</li>
+                <ul>
+                    <li>Like private in the sense of College/Branch/friendCategory( like music playlist) ?</li>
+                    <li>Like public in the sense, visible to entire population of audience ? </li>
+                </ul>
+                <li>Posts can be Photos/ Text/ Videos/ Blogs/ External Links</li>
+                <ul>
+                    <li><i class="bi bi-exclamation-triangle-fill"></i>(But how can we avoid students using this app as
+                        a dumping yard ?) </li>
+                </ul>
+
+                <li>External links can be hateful, how do we address these ?</li>
+                <li><i class="bi bi-exclamation-triangle-fill"></i> What is the ranking mechanism for posts ?</li>
+                <ul>
+                    <li> Is it by timestamp of updatedTimeStamp ?</li>
+                    <li>What happens if one of your friend comments ? Is the post shown to the student on the top ? Does
+                        commenting update updatedTimeStamp for the post ?</li>
+                </ul>
+                <li><i class="bi bi-exclamation-triangle-fill"> </i>Can a post be muted ? Likes, Comments,
+                    upvote/downvote disabled ?</li>
+                <li>Events will have Attend/Register button and organizer gets the related information.</li>
+
+
+            </ul>
+
+        </div>
+        <div id="personalpage" class="mt-5">
+            <h4 class="btn-success btn"> Personal Profile page :</h4>
+            <ul class="unstyled">
+                <li>Profile Picture</li>
+                <li>Description</li>
+                <li>Location</li>
+                <li>Gender</li>
+                <li>IDs that shows their other social media accounts (GitHub/Blog/Twitter/Facebook/Instagram)</li>
+                <li>Posts posted by Self</li>
+            </ul>
+        </div>
+
+        <div id="eventlifecycle" class="mt-5">
+            <h4 class="btn-success btn"> Event Lifecycle System:</h4>
+            <ul class="unstyled">
+                <li><i class="bi bi-exclamation-triangle-fill"> </i>Event has a creator who is knwon as Organizer. Can
+                    there be multiple organizers to an event ?</li>
+                <li>Organizer creates a logo/ profile picture of the event/ title/ description/ Start - End Dates/
+                    Timings</li>
+                <li>Upon submit of the creted Event, a workflow will be generated and gets submitted to Volunteer for
+                    approval.</li>
+                <li> Volunteer on checking with College guidelines publishes the event.</li>
+                <li> There should be a possiblity of back and forth discussions (like in git pull request).</li>
+                <li> Upon approval post gets published as per visibility options asked by Event Organizer</li>
+                <li><i class="bi bi-exclamation-triangle-fill"></i> Event gets closed after the time out. Still students
+                    can comment on it. Or Is it ?</li>
+                <li> There are badges given to the Organizer upon successful event conducted.</li>
+                <ul>
+                    <li><i class="bi bi-exclamation-triangle-fill"> </i>How do you measure success ? Or is necessary to
+                        track ?</li>
+                </ul>
+                <li><i class="bi bi-exclamation-triangle-fill"> </i>Do we need Escalation mechanism in case of Volunteer
+                    and Event Organizer differences ?</li>
+                <li>Organizers have the authority to publish winner/runner_ups/consolations after event is completed.
+                </li>
+            </ul>
+        </div>
+
+        <div id="volunteeradmin" class="mt-5">
+            <h4 class="btn-success btn"> Volunteers</h4>
+            <ul class="unstyled">
+                <li> Volunteers need to be hired who are part of every College.</li>
+                <ul>
+                    <li><i class="bi bi-exclamation-triangle-fill"> </i>Every department needs one or 1 per college ?
+                    </li>
+                </ul>
+
+                <li>Only when Event Organizer puts a request, Volunteer gets to see, discuss and approve.</li>
+                <li>They will have Open Requests/ Closed Requests/ Rejected Requests/ InProgress Requests</li>
+                <li>Volunteers can go to the event to collect/ scan QR codes. Or can he delegate this attendance check
+                    to other students ?</li>
+            </ul>
+        </div>
+
+        <div id="chat" class="mt-5">
+            <h4 class="btn-success btn">Chats & Groups</h4>
+            <ul class="unstyled">
+                <li> Students can talk to others in same college directly who are their friends by default.
+                    <ul>
+                        <li>What is the uniqueness of college, because name can be same ?</li>
+                    </ul>
+
+                <li>Students can make other college students as friends upon mutual acceptance.</li>
+                <li>Students can create groups and have a group chat.</li>
+                <li><i class="bi bi-exclamation-triangle-fill"> </i>What is the life cycle of chat history / Group chat.
+                    When do they get deleted or is their a limit ?
+                    How is the limit enforced ?</li>
+            </ul>
+        </div>
+
+        <div id="blog" class="mt-5">
+            <h4 class="btn-success btn">Blog Site</h4>
+            <ul class="unstyled">
+                <li>Blogs give a great opportunity for learning and also expresing individual interests. They go a long
+                    way in providing an atmosphere of growth.</li>
+                <li>Some Themes/Templates should be provided.</li>
+                <li>They canbe made private or public or posted.</li>
+            </ul>
+        </div>
+
+        <div id="digitalfootprint" class="mt-5">
+            <h4 class="btn-success btn">Digital Footprint with Timeline as a sharable CV</h4>
+            <ul class="unstyled">
+
+                <li>This is the Unique Selling Point of this prouduct. Upon completion of every month/every sem there
+                    will be a Digital CV provided with good theme showcasing all the achievements/participations/blog
+                    posts/highly applauded posts etc.,
+                </li>
+            </ul>
+        </div>
+
+        <div id="reportposts" class="mt-5">
+            <h4 class="btn-success btn">Post Sensoring - Report abusive language, Report Offence, Report Spam</h4>
+            <ul class="unstyled">
+                <li>-- to be added by Naveen --</li>
+            </ul>
+        </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</html>
